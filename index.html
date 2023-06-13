@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Funkciók</title>
+  <script src="js.js" type="text/JavaScript"></script>
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center;
+    }
+    .image-container img {
+      max-width: 400px;
+      max-height: 400px;
+    }
+    body{
+        background-color: skyblue;
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript Funkciók</h1>
+
+  <h2>Input elemek</h2>
+  <input type="text" id="name-input" placeholder="Név"><br>
+  <input type="number" id="age-input" placeholder="Életkor"><br>
+
+  <h2>Bevitel input elemről és prompt-ról</h2>
+  <button onclick="displayMessage()">Kattints ide</button>
+
+  <h2>Ciklusok szervezése</h2>
+  <button onclick="loopExample()">Ciklus példa</button>
+
+  <h2>Egyszerű és összetett adattípusok</h2>
+  <p id="data-output"></p>
+
+  <h2>Form használata</h2>
+  <form onsubmit="submitForm(event)">
+    <input type="text" id="form-input" placeholder="Bevitel">
+    <button type="submit">Küldés</button>
+  </form>
+
+  <h2>Események bemutatása (pl. OnClick)</h2>
+  <button onclick="changeText()">Szöveg módosítása</button>
+
+  <h2>Képnézegető</h2>
+  <div class="image-container">
+    <img id="image-viewer" src="kutya.jpg" alt="Kép">
+  </div>
+  <button onclick="changeImage()">Kép megjelenítése</button>
+
+  <h2>Számológép</h2>
+  <input type="number" id="num1" placeholder="Szám 1">
+  <input type="number" id="num2" placeholder="Szám 2">
+  <button onclick="calculate()">Számol</button>
+  <p id="result"></p>
+  <footer>Remélem most már mindenki boldog! (Mert én nem vagyok az.)</footer>
+</body>
+</html>
